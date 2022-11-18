@@ -55,7 +55,7 @@ html {
 
     header {
         width: 100%;
-        height: auto;
+        height: 500px;
         margin: 0px 0px 100px 0px;
         padding: 0px 0px;
 
@@ -77,8 +77,6 @@ html {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-
-        position: relative;
     }
 
     header > span > p {
@@ -113,6 +111,7 @@ html {
 
         background: url("./images/profile.png") no-repeat;
         background-size: cover;
+
         position: absolute;
         top: 0px;
         right: 0px;
@@ -190,14 +189,6 @@ html {
         color: #FFF;
     }
     
-    article {
-        width: 80%;
-        height: auto;
-        margin: 50px auto 0px auto;
-        padding: 0px 0px;
-
-    }
-
     hr {
         width: 100%;
         margin: 20px 0px 20px 0px;
@@ -213,6 +204,36 @@ html {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .skill {
+        width: 100%;
+        height: auto;
+        margin: 0px 0px;
+        padding: 0px 0px;
+
+        font-size: 28px;
+        font-weight: 700;
+    }
+
+    .projects {
+        width: 100%;
+        height: auto;
+        margin: 30px 0px;
+        padding: 0px 0px;
+    }
+
+    h2 {
+        width: 100%;
+        height: auto;
+        margin: 0px 0px;
+        padding: 0px 0px;
+
+        text-align: left;
+        font-size: 48px;
+        font-weight: 700;
+        color: #FFF;
     }
 
     footer {
@@ -220,9 +241,6 @@ html {
         height: auto;
         margin: 0px 0px;
         padding: 0px 0px;
-
-        position: absolute;
-        bottom: 20px;
 
         text-align: center;
     }
