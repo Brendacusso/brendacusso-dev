@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Oxygen:wght@400;700&display=swap');
+
+* {
+    font-family: 'Oxygen', sans-serif;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    margin: 0px 0px;
+    padding: 0px 0px;
+
+    overflow-y: auto;
+}
+
+@media  screen and (min-width: 750px) {
+    .light-dark-mode {
+        width: auto;
+        height: auto;
+        margin: 0px auto;
+        padding: 10px 10px;
+
+        cursor: pointer;
+        background-color: antiquewhite;
+        border-radius: 4px 0px 0px 4px;
+
+        position: fixed;
+        top: 20%;
+        right: 0px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        width: 80%;
+        height: auto;
+        margin: 0px auto;
+        padding: 0px 100px;
+
+        background-color: hsl(240, 100%, 5%);
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    p {
+        color: hsl(36, 100%, 99%);
+        line-height: 25px;
+    }
+
+    header {
+        width: 100%;
+        height: auto;
+        margin: 0px 0px 100px 0px;
+        padding: 0px 0px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        position: relative;
+    }
+
+    header span {
+        width: 100%;
+        height: auto;
+        margin: 0px 0px;
+        padding: 0px 0px;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        position: relative;
+    }
+
+    header > span > p {
+       font-family: 'Courgette', cursive;
+       font-size: 20px;
+       color:  hsl(36, 100%, 99%);
+    }
+
+    nav {
+        width: 270px;
+        height: auto;
+        margin: 0px 0px;
+        padding: 0px 0px;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        position: absolute;
+        right: 0px;
+        z-index: 99999;
+    }
+
+    nav svg {
+        margin: 0px 10px;
+    }
+
+    .profile-img {
+        width: 270px;
+        height: 480px;
+
+        background: url("./images/profile.png") no-repeat;
+        background-size: cover;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        z-index: 99998;
+    }
+
+    .profile-img:hover {
+        background: url("./images/color_profile.png") no-repeat;
+        background-size: cover;
+    }
+
+    .intro {
+        width: 50%;
+        height: auto;
+        margin: 0px auto;
+        padding: 0px 0px;
+
+        position: absolute;
+        top: 100px;
+        left: 0px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .intro div {
+        width: 100%;
+        height: auto;
+        margin: 0px 0px;
+        padding: 0px 0px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .intro-title {
+        width: 100%;
+        height: auto;
+        margin: 0px 0px;
+        padding: 0px 0px;
+
+        line-height: 45px;
+        font-size: 38px;
+        font-weight: 700;
+        color: antiquewhite;
+    }
+
+    .into-p {
+        width: 100%;
+        height: auto;
+        margin: 0px 0px;
+        padding: 0px 0px;
+
+        font-size: 16px;
+        font-weight: 700;
+        color: #fff;
+    }
+
+    .intro-link {
+        width: 100%;
+        height: auto;
+        margin: 50px 0px 0px 0px;
+        padding: 0px 0px;
+
+        cursor: pointer;
+        text-decoration: underline;
+        text-decoration-color: slateblue;
+        text-align: left;
+        font-size: 16px;
+        font-weight: 700;
+        color: #FFF;
+    }
+    
+    article {
+        width: 80%;
+        height: auto;
+        margin: 50px auto 0px auto;
+        padding: 0px 0px;
+
+    }
+
+    hr {
+        width: 100%;
+        margin: 20px 0px 20px 0px;
+        background-color: hsl(233, 8%, 79%);
+    }
+
+    .skills {
+        width: 100%;
+        height: auto;
+        margin: 50px auto 0px auto;
+        padding: 0px 0px;
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    footer {
+        width: 100%;
+        height: auto;
+        margin: 0px 0px;
+        padding: 0px 0px;
+
+        position: absolute;
+        bottom: 20px;
+
+        text-align: center;
+    }
+}
