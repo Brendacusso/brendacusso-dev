@@ -13,15 +13,40 @@ html {
     overflow-y: auto;
 }
 
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0px 0px;
+    padding: 0px 0px;
+}
+
 @media  screen and (min-width: 750px) {
+    div , span , h1 , h2 , h3 , h4 , h5 , p {
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        cursor: default;
+    }
+
+    .link {
+        cursor: pointer;
+    }
+
+    .link:hover {
+        scale: 1.2;
+    }
+
     .light-dark-mode {
         width: auto;
         height: auto;
         margin: 0px auto;
         padding: 10px 10px;
 
-        cursor: pointer;
         background-color: antiquewhite;
+        cursor: pointer;
         border-radius: 4px 0px 0px 4px;
 
         position: fixed;
@@ -34,13 +59,15 @@ html {
         align-items: center;
     }
 
+    .light-dark-mode:hover {
+        scale: 1.2;
+    }
+
     .container {
-        width: 80%;
+        width: calc(100% - 200px);
         height: auto;
         margin: 0px auto;
         padding: 0px 100px;
-
-        background-color: hsl(240, 100%, 5%);
 
         display: flex;
         flex-direction: column;
@@ -48,10 +75,27 @@ html {
         align-items: center;
     }
 
-    p {
+    .container-dark {
+        background-color: hsl(240, 100%, 5%);
         color: hsl(36, 100%, 99%);
-        line-height: 25px;
     }
+
+    .container-light {
+        background-color: hsl(26, 90%, 98%);
+        color: hsl(240, 100%, 5%);
+    }
+
+    .color-dark {
+        color: hsl(36, 100%, 99%);
+    }
+
+    .color-light {
+        color: hsl(240, 100%, 5%);
+    }
+    
+    p {
+        line-height: 25px;
+      }
 
     header {
         width: 100%;
@@ -82,7 +126,6 @@ html {
     header > span > p {
        font-family: 'Courgette', cursive;
        font-size: 20px;
-       color:  hsl(36, 100%, 99%);
     }
 
     nav {
@@ -160,7 +203,6 @@ html {
         line-height: 45px;
         font-size: 38px;
         font-weight: 700;
-        color: antiquewhite;
     }
 
     .into-p {
@@ -171,7 +213,6 @@ html {
 
         font-size: 16px;
         font-weight: 700;
-        color: #fff;
     }
 
     .intro-link {
@@ -186,29 +227,39 @@ html {
         text-align: left;
         font-size: 16px;
         font-weight: 700;
-        color: #FFF;
+    }
+
+    .intro-link:hover {
+        font-size: larger;
+        text-shadow: 0px 0px 2px #fff;
+        font-weight: 700;
     }
     
-    hr {
+    .hr-dark {
         width: 100%;
-        margin: 20px 0px 20px 0px;
-        background-color: hsl(233, 8%, 79%);
+        margin: 10px 0px 10px 0px;
+        background-color: hsl(233, 8%, 29%);
+    }
+
+    .hr-light {
+        width: 100%;
+        margin: 10px 0px 10px 0px;
+        background-color: hsl(240, 100%, 5%);
     }
 
     .skills {
         width: 100%;
         height: auto;
-        margin: 50px auto 0px auto;
+        margin: 20px auto 0px auto;
         padding: 0px 0px;
 
         display: flex;
-        flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: flex-start;
     }
 
     .skill {
-        width: 100%;
+        width: 350px;
         height: auto;
         margin: 0px 0px;
         padding: 0px 0px;
@@ -221,7 +272,69 @@ html {
         width: 100%;
         height: auto;
         margin: 30px 0px;
+        padding: 20px 0px;
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .project-item {
+        width: 200px;
+        height: auto;
+        margin: 50px 0px;
+        padding: 20px 20px;
+
+        border-radius: 2px;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .project-item-dark {
+        background-color: transparent;
+    }
+
+    .project-item-light {
+        background-color: antiquewhite;
+    }
+
+    .project-item img:hover {
+        box-shadow: 0px 0px 2px 1px #fff;
+    }
+    .project-item:hover {
+        scale: 1.1;
+    }
+
+    .project-item img {
+        width: 200px;
+        height: 200px;
+        border-radius: 2px;
+    }
+
+    .project-title {
+        width: 100%;
+        height: auto;
+        margin: 10px 0px 5px 0px;
         padding: 0px 0px;
+
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    .project-lang {
+        width: 100%;
+        height: auto;
+        margin: 0px 0px;
+        padding: 0px 0px;
+
+        font-size: 16px;
+        font-weight: 400;
+        color:  hsl(233, 8%, 29%);
+        text-align: left;
+        letter-spacing: 3px;
     }
 
     h2 {
@@ -234,15 +347,23 @@ html {
         text-align: left;
         font-size: 48px;
         font-weight: 700;
-        color: #FFF;
     }
 
     footer {
         width: 100%;
         height: auto;
         margin: 0px 0px;
-        padding: 0px 0px;
+        padding: 20px 0px;
 
         text-align: center;
+    }
+
+    .footer-dark {
+        background-color: hsl(233, 8%, 29%);
+    }
+
+    .footer-light {
+        background-color: hsl(240, 100%, 5%);
+        color: hsl(36, 100%, 99%);
     }
 }
