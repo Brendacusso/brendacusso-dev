@@ -1,7 +1,6 @@
 document.querySelector('.link-git').addEventListener('click', linkGit);
 document.querySelector('.link-linkedin').addEventListener('click', linkLinkedin);
 document.querySelector('.link-whats').addEventListener('click', linkWhats);
-document.querySelector('.intro-link').addEventListener('click', linkWhats);
 document.querySelector('.project1').addEventListener('click', project1);
 document.querySelector('.light-dark-mode').addEventListener('click', changeLightMode);
 
