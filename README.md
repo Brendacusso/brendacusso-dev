@@ -9,7 +9,7 @@
 </div>
 <p></p>
 <p></p>
-<p>Oi, este é meu portifolio pessoal onde quero compartilhar meus futuros projetos</p>
+<p>Oi, este é meu portifolio pessoal onde estarei compartilhando meus futuros projetos</p>
 <p> :speech_balloon: Em desenvolvimento...</p>
 <div style="display: inline_block">
 
