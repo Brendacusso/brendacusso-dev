@@ -13,7 +13,7 @@
 <p> :speech_balloon: Em desenvolvimento...</p>
 <div style="display: inline_block">
 
-<a src="https://brendacusso.github.io/brendacusso-dev/"><img src="https://img.shields.io/badge/-Portifolio-antiquewhite?style=for-the-badge" target="_blank"></a>
-<a src="https://www.linkedin.com/in/brenda-cusso"><img src="https://img.shields.io/badge/-Linkedin-lightblue?style=for-the-badge"></a>
+<a href="https://brendacusso.github.io/brendacusso-dev/"><img src="https://img.shields.io/badge/-Portifolio-antiquewhite?style=for-the-badge" target="_blank"></a>
+<a href="https://www.linkedin.com/in/brenda-cusso"><img src="https://img.shields.io/badge/-Linkedin-lightblue?style=for-the-badge"></a>
 
 </div>
